@@ -14,29 +14,29 @@ public class ControlActividadesController {
     @Autowired
     private IControlActividadesService controlActividadesService;
 
-    @GetMapping("/actividades")
+    @GetMapping()
     public List<ControlActividades> findALL(){
         return controlActividadesService.findAll();
     }
 
 
-    @GetMapping("/actividades/{id}")
+    @GetMapping("/{id}")
     public Optional<ControlActividades> findById(@PathVariable Long id){
         return controlActividadesService.findById(id);
     }
 
 
-    @PostMapping("/actividades")
+    @PostMapping()
     public ControlActividades save(@RequestBody ControlActividades controlActividades){
         return controlActividadesService.save(controlActividades);}
 
 
-    @PutMapping("/actividades/{id}")
+    @PutMapping("/{id}")
     public void update(@RequestBody ControlActividades controlActividades, @PathVariable Long id){
         controlActividadesService.update(controlActividades, id);
     }
 
-    @DeleteMapping("/actividades/{id}")
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id){
         controlActividadesService.delete(id);
     }

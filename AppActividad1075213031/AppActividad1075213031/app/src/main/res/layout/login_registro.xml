@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/etDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center" />
+</LinearLayout>
